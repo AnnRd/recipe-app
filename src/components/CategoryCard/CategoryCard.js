@@ -14,10 +14,9 @@ function CategoryCard (props) {
     // }
 
 
-
     return (
        
-            <Link to={`/categories/${name}`} onClick={getCategoryRecipes} className='card' id={key}>
+            <Link to={`/categories/${name}`} onClick={getCategoryRecipes(name.toLowerCase())} className='card' id={key}>
                 <img className='food-img' src={img} alt={name} />
                 <div className='food-name'>{name}</div>
             </Link>

@@ -13,7 +13,7 @@ function CategoriesList () {
         });
     }, []);
 
-    console.log(categories);
+    // console.log(categories);
     return (
         <div className="list">
             {categories?.map((dish) => {
