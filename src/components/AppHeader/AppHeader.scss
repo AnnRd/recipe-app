@@ -1,0 +1,28 @@
+.app-header {
+    width: 50%;
+    margin: 0 auto;
+    font-size:70px;
+    font-weight: 600;
+    background-image: radial-gradient(ellipse, #553c9a, #b393d3);
+    color: transparent;
+    background-clip: text; // фон закрашивается внутри (обрезается) текста переднего плана
+    -webkit-background-clip: text;
+}
+
+.app-header span {
+    color: white;
+}
+
+hr {
+    height: 10px;
+    background-image: radial-gradient(circle, #553c9a, #b393d3);
+}
+
+.navigation {
+    font-size: 30px;
+    color: #b393d3;
+}
+
+.active {
+    color: rgb(54, 2, 52);
+}
