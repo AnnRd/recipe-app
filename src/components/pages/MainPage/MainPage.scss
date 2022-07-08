@@ -1,0 +1,16 @@
+.info {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    background-image: radial-gradient(ellipse, #553c9a, #b393d3);
+    color: transparent;
+    background-clip: text; // фон закрашивается внутри (обрезается) текста переднего плана
+    -webkit-background-clip: text;
+    margin-top: 200px;
+}
+
+.info span {
+        color: white;
+        // margin-top: 32px;
+    }

@@ -3,6 +3,8 @@ import AppHeader from "../AppHeader/AppHeader";
 import CategoriesPage from "../pages/CategoriesPage/CategoriesPage";
 import MainPage from "../pages/MainPage/MainPage";
 
+import './App.scss'
+
 function App() {
   return (
     <div className="App">
