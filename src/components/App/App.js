@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import AppFooter from "../AppFooter/AppFooter";
 import AppHeader from "../AppHeader/AppHeader";
 import CategoriesPage from "../pages/CategoriesPage/CategoriesPage";
 import MainPage from "../pages/MainPage/MainPage";
@@ -17,6 +18,9 @@ function App() {
           <Route path="/categories" element={<CategoriesPage/>}/>
         </Routes>
       </main>
+      <footer>
+        <AppFooter/>
+      </footer>
     </div>
   );
 }

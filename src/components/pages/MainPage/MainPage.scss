@@ -7,7 +7,8 @@
     color: transparent;
     background-clip: text; // фон закрашивается внутри (обрезается) текста переднего плана
     -webkit-background-clip: text;
-    margin-top: 200px;
+    height:568px;
+    align-items: center;
 }
 
 .info span {
