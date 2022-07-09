@@ -5,8 +5,10 @@ import CategoriesList from "../CategoriesList/CategoriesList";
 import CategoriesPage from "../pages/CategoriesPage/CategoriesPage";
 import MainPage from "../pages/MainPage/MainPage";
 import CategoriesRecipes from "../pages/CategoryRecipes/CategoriesRecipes";
+import RecipeId from "../pages/RecipeId/RecipeId";
 
 import './App.scss'
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path="/" element={<MainPage/>}/>
           <Route path="/categories" element={<CategoriesPage/>}/>
           <Route path="/categories/:name" element={<CategoriesRecipes/>} />
+          <Route path="/categories/:name/:id" element={<RecipeId/>}/>
         </Routes>
       </main>
       <footer>

@@ -12,4 +12,10 @@ const getCategoryRecipes = async (name) => {
     return await response.json();
 };
 
-export {getAllCategories, getCategoryRecipes};
+// получить один рецепт по id
+const getOneRecipe = async (id) => {
+    const response = await fetch(_apiURL + 'lookup.php?i=' + id);
+    return await response.json();
+};
+
+export {getAllCategories, getCategoryRecipes, getOneRecipe};

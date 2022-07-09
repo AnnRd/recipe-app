@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getCategoryRecipes } from "../../../requests/requests";
+import { Link } from "react-router-dom";
 
 import './CategoryRecipes.scss';
 
@@ -8,13 +9,13 @@ function CategoryRecipes() {
     const params = useParams();
     const [recipes, setRecipes] = useState([]);
 
-    async function getRecipe() {
+    async function getRecipes() {
         const response = await getCategoryRecipes(params.name);
         setRecipes(response);
     }
 
     useEffect(() => {
-        return getRecipe;
+        return getRecipes;
     }, []);
 
     return (
@@ -24,10 +25,10 @@ function CategoryRecipes() {
             <div className="container-recipe">
                 {recipes.meals?.map((meal) => {
                 return (
-                    <div className="category-dish" id={meal.idMeal}>
+                    <Link to={`/categories/${params.name}/${meal.idMeal}`} className="category-dish" id={meal.idMeal}>
                         <div className='food-name-recipe'>{meal.strMeal}</div>
                         <img className='food-img-recipe' src={meal.strMealThumb}></img>
-                    </div>
+                    </Link>
                 )
             })}
             </div>
