@@ -22,15 +22,14 @@ hr {
     font-size: 30px;
     color: #b393d3;
     display: flex;
-    // justify-content: center;
     margin-top: 20px;
-
     width: 600px;
     margin: 0 auto;
-    display: flex;
     justify-content: space-between;
 }
 
 .active {
     color: rgb(54, 2, 52);
+    background-color: #d6bfed;
+    border-radius: 5px;
 }

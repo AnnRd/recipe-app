@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     // width: 20%;
+    width: 394px;
     height: 350px;
     border-radius: 5%;
     margin: 20px;
@@ -11,6 +12,7 @@
     // background-color: rgb(249, 243, 251, 0.3);
     transition: 1s;
     box-shadow: 0 0 20px #553c9a;
+    text-decoration: none;
 }
 
 .food-img {
@@ -24,10 +26,11 @@
 }
 
 .food-name {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     background-image: radial-gradient(ellipse, #553c9a, #b393d3);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    margin-top: 10px;
 }

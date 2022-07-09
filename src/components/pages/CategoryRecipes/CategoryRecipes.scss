@@ -1,0 +1,66 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 30px;
+    width: 350px;
+    font-size: 30px;
+    color: #553c9a;
+    box-shadow: 0 0 20px #553c9a;
+    background-color: rgb(179, 147, 211, 0.3); //0.3 задает прозрачность
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 30px;
+    font-size: 30px;
+    color: #553c9a;
+}
+
+.container-recipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+    // transition: 1s;
+    :hover {
+        transform: scale(1.1);  //+
+    }
+}
+
+.category-dish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // width: 20%;
+    height: 350px;
+    border-radius: 5%;
+    margin: 20px;
+    background-color: rgb(179, 147, 211, 0.3); //0.3 задает прозрачность
+    // background-color: rgb(249, 243, 251, 0.3);
+    transition: 1s;
+    box-shadow: 0 0 20px #553c9a;
+}
+
+.food-img-recipe {
+    width: 320px;
+    height: 220px;
+    border-radius: 3%;
+        :not(:hover) {
+            transform: scale(1.1);
+    
+    }
+}
+
+.food-name-recipe {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-image: radial-gradient(ellipse, #553c9a, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    width: 350px;
+    margin-left: 44px; // ПОМЕНЯТЬ
+}

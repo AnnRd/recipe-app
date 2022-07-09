@@ -4,7 +4,7 @@ import AppHeader from "../AppHeader/AppHeader";
 import CategoriesList from "../CategoriesList/CategoriesList";
 import CategoriesPage from "../pages/CategoriesPage/CategoriesPage";
 import MainPage from "../pages/MainPage/MainPage";
-import CategoriesRecipes from "../pages/CategoriesRecipes";
+import CategoriesRecipes from "../pages/CategoryRecipes/CategoriesRecipes";
 
 import './App.scss'
 
