@@ -7,7 +7,7 @@ function CategoriesRecipes() {
     const [recipes, setRecipes] = useState([]);
 
     async function getRecipe() {
-        const response = await getCategoryRecipes(params.name.toLowerCase());
+        const response = await getCategoryRecipes(params.name);
         setRecipes(response);
     }
 
