@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 import './CategoryCard.scss';
 import {getCategoryRecipes} from '../../requests/requests';
+import { useState } from 'react';
 
 function CategoryCard (props) {
     const {img, name, key} = props;
@@ -13,10 +14,14 @@ function CategoryCard (props) {
     //     console.log(category);
     // }
 
+    // async function linkHandler() {
+    //     const response = await getCategoryRecipes(name.toLowerCase());
+    // }
+
 
     return (
        
-            <Link to={`/categories/${name}`} onClick={getCategoryRecipes(name.toLowerCase())} className='card' id={key}>
+            <Link to={`/categories/${name}`} className='card' id={key}>
                 <img className='food-img' src={img} alt={name} />
                 <div className='food-name'>{name}</div>
             </Link>
