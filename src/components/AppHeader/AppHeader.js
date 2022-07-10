@@ -8,8 +8,12 @@ function AppHeader () {
             <hr />
             
             <div className='navigation'>
-                <NavLink to='/' style={{ textDecoration: 'none' }}>Home</NavLink>
-                <NavLink to='/categories' style={{ textDecoration: 'none' }}>CategoriesPage</NavLink>
+                <div className="home">
+                    <NavLink to='/' style={{ textDecoration: 'none' }}>Home</NavLink>
+                </div>
+                <div className="categories-nav">
+                    <NavLink to='/categories' style={{ textDecoration: 'none' }}>Categories</NavLink>
+                </div>
                 {/* <NavLink to='recipes'>Recipes</NavLink> */}
             </div>
         </>

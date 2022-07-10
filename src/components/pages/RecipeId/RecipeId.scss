@@ -7,12 +7,13 @@
 .info-id {
     font-size: 30px;
     line-height: 1.5;
-    margin-left: 10px;
+    margin: 30px;
+    text-align: justify;
 }
 
 .recipe-id-img {
-    width: 600px;
-    height: 700px;
+    width: 550px;
+    height: 600px;
     margin-top: 50px;
     border-radius: 10px;
     box-shadow: 10px 15px 15px #d2bbea;
@@ -25,4 +26,10 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+.title {
+    font-weight: 600;
+    color: #553c9a;
+    margin: 20px;
 }

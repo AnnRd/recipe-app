@@ -33,11 +33,11 @@ console.log(ingr);
                 <div className="name-id">
                     {recipe.strMeal}
                 </div>
-                🔹Category: {recipe.strCategory}<br/>
-                🔹Area: {recipe.strArea}<br/>
-                🔹Ingredients:<br/>{ingredients.map(el => el).join('🍴')}<br/>
-                🔹How to cook:<br/>{recipe.strInstructions}<br/>
-                🔹Watch the recipe on Youtube: <a href={recipe.strYoutube}>📺</a>
+                <span className="title">🔹Category:</span> {recipe.strCategory}<br/>
+                <span className="title">🔹Area:</span> {recipe.strArea}<br/>
+                <div className="title">🔹Ingredients:</div>{ingredients.map(el => el).join('🍴')}<br/>
+                <div className="title">🔹How to cook:</div>{recipe.strInstructions}<br/>
+                <span className="title">🔹Watch the recipe on Youtube:</span> <a href={recipe.strYoutube}>📺</a>
                 {/* <video t src={recipe.strYoutube}> */}
             </div>
         </div>

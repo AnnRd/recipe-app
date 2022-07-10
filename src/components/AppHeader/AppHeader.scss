@@ -25,7 +25,17 @@ hr {
     margin-top: 20px;
     width: 600px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.home {
+    width: 190px;
+    justify-content: center;
+}
+
+.categories-nav {
+    width: 190px;
+    justify-content: center;
 }
 
 .active {
@@ -33,5 +43,5 @@ hr {
     background-color: #d6bfed;
     border-radius: 5px;
     box-shadow: 0 8px 15px #d2bbea;
-    // width: 190px;
+    width: 190px; // ?????????????????????????????????????
 }
