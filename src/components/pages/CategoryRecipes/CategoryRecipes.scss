@@ -5,7 +5,8 @@ h2 {
     width: 350px;
     font-size: 30px;
     color: #553c9a;
-    box-shadow: 0 0 20px #553c9a;
+    // box-shadow: 0 0 20px #553c9a;
+    box-shadow: 0 8px 15px rgb(179, 147, 211, 0.3);
     background-color: rgb(179, 147, 211, 0.3); //0.3 задает прозрачность
 }
 
@@ -40,7 +41,8 @@ h2 {
     background-color: rgb(179, 147, 211, 0.3); //0.3 задает прозрачность
     // background-color: rgb(249, 243, 251, 0.3);
     transition: 1s;
-    box-shadow: 0 0 20px #553c9a;
+    // box-shadow: 0 0 20px #553c9a;
+    box-shadow: 0 15px 15px rgb(179, 147, 211, 0.3);
     text-decoration: none;
 }
 
