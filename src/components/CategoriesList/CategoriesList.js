@@ -10,14 +10,16 @@ function CategoriesList () {
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(false);
 
-
     useEffect(() => {
         setLoading(true);
 
         getAllCategories().then(data => {
             data.categories && setCategories(data.categories);
         });
-        setLoading(false);
+        
+        setTimeout(() => {
+            setLoading(false);
+        }, 500);
     }, []);
 
     console.log(categories);
