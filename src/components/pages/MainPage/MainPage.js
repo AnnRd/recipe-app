@@ -1,8 +1,16 @@
 import './MainPage.scss';
+import { Helmet } from 'react-helmet';
 
 function MainPage() {
     return (
         <div className='container'>
+             <Helmet>
+                <meta
+                    name="description"
+                    content="Recipe App"
+                    />
+                <title>Recipe App - find what you want</title>
+            </Helmet>
             <div className="emo">
                 <div className="left-emoji">🍔</div>
                 <div className="left-emoji">🍤</div>

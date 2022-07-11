@@ -1,6 +1,7 @@
 import { getOneRecipe } from '../../../requests/requests';
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 import './RecipeId.scss';
 
@@ -28,6 +29,13 @@ function RecipeId () {
 console.log(ingr);
     return (
         <div className="recipe-id">
+            <Helmet>
+                <meta
+                    name="description"
+                    content={`${recipe.strMeal} recipe`}
+                />
+                <title>{`${recipe.strMeal} recipe`}</title>
+            </Helmet>
             <img className='recipe-id-img' src={recipe.strMealThumb} alt={recipe.strMeal} />
             <div className="info-id">
                 <div className="name-id">

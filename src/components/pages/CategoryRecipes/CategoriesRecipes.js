@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import { getCategoryRecipes } from "../../../requests/requests";
 import { Link } from "react-router-dom";
@@ -20,6 +21,13 @@ function CategoryRecipes() {
 
     return (
         <>
+             <Helmet>
+                <meta
+                    name="description"
+                    content={`Recipes in category: ${params.name}`}
+                    />
+                <title>Recipes in category: {params.name}</title>
+            </Helmet>
             <h2>{params.name}</h2>
             <div className="subtitle">Click the dish to see the recipe 👇</div>
             <div className="container-recipe">
