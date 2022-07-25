@@ -28,7 +28,7 @@ function CategoryRecipes() {
     }, []);
 
     return (
-           isLoading ? <Spinner/> : (
+           isLoading ? <div className="spinner"><Spinner/></div> : (
              <>
                 <Helmet>
                     <meta

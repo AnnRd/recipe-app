@@ -2,7 +2,7 @@ import './AppFooter.scss';
 
 function AppFooter () {
     return (
-        <div>
+        <div className='footerWrapper'>
             <hr />
             <div className="footer">
                 © {new Date().getFullYear()} Anna Radchenko

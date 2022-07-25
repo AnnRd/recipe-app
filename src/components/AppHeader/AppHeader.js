@@ -9,10 +9,10 @@ function AppHeader () {
             
             <div className='navigation'>
                 <div className="nav-link">
-                    <NavLink to='/' style={{ textDecoration: 'none' }}>Home</NavLink>
+                    <NavLink to='/'>Home</NavLink>
                 </div>
                 <div className="nav-link">
-                    <NavLink to='/categories' style={{ textDecoration: 'none' }}>Categories</NavLink>
+                    <NavLink to='/categories'>Categories</NavLink>
                 </div>
                 {/* <NavLink to='recipes'>Recipes</NavLink> */}
             </div>

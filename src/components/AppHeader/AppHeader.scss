@@ -3,7 +3,7 @@
     margin: 0 auto;
     font-size:70px;
     font-weight: 600;
-    background-image: radial-gradient(ellipse, #553c9a, #b393d3);
+    background-image: radial-gradient(ellipse, #99460b, #e59e55);
     color: transparent;
     background-clip: text; // фон закрашивается внутри (обрезается) текста переднего плана
     -webkit-background-clip: text;
@@ -15,12 +15,12 @@
 
 hr {
     height: 10px;
-    background-image: radial-gradient(circle, #553c9a, #b393d3);
+    background-image: radial-gradient(circle, #99460b, #e59e55);
 }
 
 .navigation {
     font-size: 30px;
-    color: #b393d3;
+    color: #5b4636;
     display: flex;
     margin-top: 20px;
     width: 600px;
@@ -35,12 +35,18 @@ hr {
 }
 
 .active {
-    color: rgb(54, 2, 52);
-    background-color: #d6bfed;
+    color: #5b4636;
+    text-decoration: none;
+    background-color: #e7ab6cd4;
     border-radius: 5px;
-    box-shadow: 0 8px 15px #d2bbea;
+    box-shadow: 0 8px 15px #e7ab6cd4;
     display: flex;
     justify-content: center;
     width: 100%;
     // width: 190px; // ?????????????????????????????????????
+}
+
+a {
+    color: #5b4636;
+    text-decoration: none;
 }

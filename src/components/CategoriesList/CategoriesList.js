@@ -22,9 +22,8 @@ function CategoriesList () {
         }, 500);
     }, []);
 
-    console.log(categories);
     return (
-        loading ? <Spinner/> :
+        loading ? <div className="spinner"><Spinner/></div> :
         <div className="list">
              <Helmet>
                 <meta
@@ -33,9 +32,10 @@ function CategoriesList () {
                     />
                 <title>Categories</title>
             </Helmet>
+
             {categories?.map((dish) => {
-            return <CategoryCard name={dish.strCategory} img={dish.strCategoryThumb} key={dish.idCategory}/>
-        })}
+                return <CategoryCard name={dish.strCategory} img={dish.strCategoryThumb} key={dish.idCategory}/>
+            })}
         </div>
     )
 }
