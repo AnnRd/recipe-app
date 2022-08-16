@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 
 import './CategoryCard.scss';
-import {getCategoryRecipes} from '../../requests/requests';
-import { useState } from 'react';
 
 function CategoryCard (props) {
     const {img, name, key} = props;

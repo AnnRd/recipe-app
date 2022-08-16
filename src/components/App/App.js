@@ -9,7 +9,6 @@ import RecipeId from "../pages/RecipeId/RecipeId";
 
 import './App.scss'
 
-
 function App() {
   return (
     <div className="App">
