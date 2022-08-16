@@ -14,7 +14,6 @@ function AppHeader () {
                 <div className="nav-link">
                     <NavLink to='/categories'>Categories</NavLink>
                 </div>
-                {/* <NavLink to='recipes'>Recipes</NavLink> */}
             </div>
         </>
         

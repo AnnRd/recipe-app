@@ -52,16 +52,6 @@ function RecipeId () {
                     <div className="title">◉ Ingredients:</div>{ingredients.map(el => el).join('🍴')}<br/>
                     <div className="title">◉ How to cook:</div>{recipe.strInstructions}<br/>
                     <span className="title">◉ Watch the recipe on Youtube:</span> <a classname="link" href={recipe.strYoutube}>📺 {recipe.strMeal}</a>
-                    {/* <span className="title">🔹Watch the recipe on Youtube:</span> <iframe
-                    width="90%"
-                    height="400px"
-                    src={recipe.strYoutube}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe> */}
-
-                    {/* <video src={recipe.strYoutube}/> */}
                 </div>
             </div>
         )

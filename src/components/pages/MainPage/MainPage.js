@@ -33,7 +33,6 @@ function MainPage() {
                 <div className="right-emoji">🍔</div>
                 <div className="right-emoji">🍤</div>
                 <div className="right-emoji">🍩</div>
-                {/* <div className="right-emoji">🥮</div> */}
             </div>
         </div>
     )
